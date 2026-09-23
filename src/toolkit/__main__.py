@@ -18,7 +18,7 @@ def main():
         elif len(args) == 1:
             command = args[0]
         else:
-            raise ValueError("Ошибка ввода")
+            raise ToolkitError("Ошибка ввода")
             
         if command == "calc":
             result = calculate(expression)
@@ -42,7 +42,7 @@ python -m toolkit --help
 """)
 
         else:
-            raise ValueError("Ошибка ввода команды, доcтупные: calc, convert, help")
+            raise ToolkitError("Ошибка ввода команды, доcтупные: calc, convert, help")
 
         
 if __name__ == "__main__":
