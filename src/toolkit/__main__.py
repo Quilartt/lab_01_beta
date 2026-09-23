@@ -42,7 +42,7 @@ python -m toolkit --help
 """)
 
         else:
-            raise ValueError("Ошибка ввода команды, доcступные: calc, convert, help")
+            raise ValueError("Ошибка ввода команды, доcтупные: calc, convert, help")
 
         
 if __name__ == "__main__":
